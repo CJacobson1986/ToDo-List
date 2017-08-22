@@ -4,7 +4,7 @@
   display:flex;
   flex-direction:column;
   min-height:100vh;
-  background: #c4c4c4;
+  background: #1414bb;
 }
 
 .todoList {
@@ -15,19 +15,25 @@
 }
 
 .listItem {
-  background: #75a378;
+  background: #0f0f92;
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
   font-variant:small-caps;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.3em;
+  color: white;
+  box-shadow: 10px 10px 5px #0f0f92;
 }
 
 .listItem:hover {
-  background: #DDDDDD;
+  background: #3333c8;
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
   font-variant:small-caps;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2em;
 }
 
 .inputContainer {
@@ -40,22 +46,43 @@
 .todoInput {
   padding: 10px;
   margin-top: 30px;
-  font-size: 1.1em;
+  font-size: 1.3em;
+  font-family: 'Roboto Slab', serif;
 }
 
 .todoButton {
   padding: 10px;
   margin-top: 10px;
   border: none;
-  background: #8e8e8e;
-  font-size: 1.1em;
+  font-size: 1.5em;
   border-radius: 5px;
+  color: white;
+  background: #0f0f92;
+  box-shadow: 5px 5px 5px #0f0f92;
 }
 
 .todoButton:hover {
-  background: #107222;
+  background: #3333c8;
 }
 
 .todoButton :active{
-  background: #00AAFF;
+  background: #0f0f92;
+}
+
+.clearList {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  font-size: 1em;
+  border-radius: 5px;
+  color: white;
+  background: #0f0f92;
+  box-shadow: 5px 5px 5px #0f0f92;
+}
+.clearList:hover {
+  background: #3333c8;
+}
+
+.clearList:active{
+  background: #0f0f92;
 }

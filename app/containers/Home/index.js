@@ -33,15 +33,26 @@ export default class Home extends React.PureComponent {
     }
   }
 
-handleEnter = (event) => {
-  if (event.keyCode === 13)
-  this.storeItem();
-}
+  handleEnter = (event) => {
+    if (event.keyCode === 13)
+    this.storeItem();
+  }
 
   handleItem = (event) => {
     this.setState({
       inputItem: event.target.value
-  })
+    })
+  }
+
+  strikeThrough = (event) => {
+    let item = event.target;
+    item.style.textDecoration = 'line-through';
+  }
+
+  clearButton = () => {
+    this.setState ({
+      listItems:[]
+    })
   }
 
   render() {
@@ -58,11 +69,14 @@ handleEnter = (event) => {
               value="Add to List"
               className="todoButton"
               onClick={this.storeItem} />
+            <input type="submit"
+              value="Clear List"
+              className="clearList"
+              onClick={this.clearButton} />
         </div>
         <div className="todoList">
           {this.state.listItems.map((item, index) => (
-            <div className="listItem"
-              key={index}>
+            <div type="button" className="listItem" key={index} onClick={this.strikeThrough}>
             {item}
             </div>
           ))}
