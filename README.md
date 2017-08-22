@@ -31,4 +31,4 @@ To generate Components:
 Special thanks to Technopathic for his React-Boilerplate and the original build scripts.
 
 ## License
-TheClubhou.se
+MIT
