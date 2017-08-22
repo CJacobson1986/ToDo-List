@@ -58,7 +58,7 @@ export default class Home extends React.PureComponent {
   render() {
     return (
       <div className="container">
-        <Helmet title="Home" meta={[ { name: 'description', content: 'Description of Home' }]}/>
+        <Helmet title="ToDo List" meta={[ { name: 'description', content: 'Description of Home' }]}/>
         <div className="inputContainer">
             <input type="text"
               className="todoInput"
