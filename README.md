@@ -27,6 +27,9 @@ To generate Components:
 ## Screenshot
 ![alt text](http://h4z.it/Image/b9958e_-ListCapture.PNG "To Do List")
 
+## Author
+Christopher Jacobson
+
 ## Thanks
 Special thanks to Technopathic for his React-Boilerplate and the original build scripts.
 
