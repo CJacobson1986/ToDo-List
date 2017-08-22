@@ -58,7 +58,9 @@ export default class Home extends React.PureComponent {
   render() {
     return (
       <div className="container">
-        <Helmet title="ToDo List" meta={[ { name: 'description', content: 'Description of Home' }]}/>
+        <Helmet title="To Do List
+          " meta={[ { name: 'description',
+          content: 'Description of Home' }]}/>
         <div className="inputContainer">
             <input type="text"
               className="todoInput"
@@ -76,7 +78,10 @@ export default class Home extends React.PureComponent {
         </div>
         <div className="todoList">
           {this.state.listItems.map((item, index) => (
-            <div type="button" className="listItem" key={index} onClick={this.strikeThrough}>
+            <div type="button"
+              className="listItem"
+              key={index}
+              onClick={this.strikeThrough}>
             {item}
             </div>
           ))}
