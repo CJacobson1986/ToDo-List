@@ -52,30 +52,16 @@ export default class Home extends React.PureComponent {
       let listItems = this.state.listItems;
       listItems.push(json.task);
       this.setState({
-        listItems:listItems
+        listItems:listItems,
+        inputItem:""
       })
       this.forceUpdate();
     }.bind(this))
   };
 
-  storeItem = () => {
-
-    var listItems = this.state.listItems;
-    var inputItem = this.state.inputItem;
-
-    if (inputItem !== "") {
-      listItems.push(inputItem);
-
-      this.setState({
-        listItems: listItems,
-        inputItem:""
-      })
-    }
-  };
-
   handleEnter = (event) => {
     if (event.keyCode === 13)
-    this.storeItem();
+    this.storeTask();
   };
 
   handleItem = (event) => {
