@@ -76,9 +76,16 @@ export default class Home extends React.PureComponent {
   };
 
   clearButton = () => {
-    this.setState ({
-      listItems:[]
+    fetch('http://localhost:8000/api/deleteTasks/', {
+      method:'Post',
+      mode:'no-cors'
     })
+    .then(function() {
+        this.setState({
+          listItems:[]
+        })
+      this.forceUpdate();
+    }.bind(this))
   };
 
   render() {
